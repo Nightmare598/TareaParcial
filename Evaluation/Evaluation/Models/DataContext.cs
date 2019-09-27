@@ -6,5 +6,7 @@ namespace webEval.Models
     public class DataContext: DbContext
     {
         public DataContext() : base("DefaultConnection") { }
+
+        public System.Data.Entity.DbSet<Evaluation.Models.Student> Students { get; set; }
     }
 }

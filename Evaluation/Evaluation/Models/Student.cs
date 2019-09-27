@@ -16,6 +16,7 @@ namespace Evaluation.Models
         [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
         [Required]
-        public int MyProperty { get; set; }
+        public TypeGender Gender { get; set; }
+        public virtual ICollection<Grade> Grade { get; set; }
     }
 }
